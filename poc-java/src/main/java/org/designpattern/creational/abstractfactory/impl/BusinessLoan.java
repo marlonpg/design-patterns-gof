@@ -3,6 +3,10 @@ package org.designpattern.creational.abstractfactory.impl;
 public class BusinessLoan implements Loan {
     private double interestRate;
 
+    public BusinessLoan() {
+        this.interestRate = 5.0;
+    }
+
     public BusinessLoan(double interestRate){
         this.interestRate = interestRate;
     }

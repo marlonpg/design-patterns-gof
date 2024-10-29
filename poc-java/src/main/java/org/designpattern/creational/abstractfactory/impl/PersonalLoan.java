@@ -1,9 +1,11 @@
 package org.designpattern.creational.abstractfactory.impl;
 
-import org.designpattern.creational.abstractfactory.impl.Loan;
-
 public class PersonalLoan implements Loan {
     private double interestRate;
+
+    public PersonalLoan() {
+        this.interestRate = 8.0;
+    }
 
     public PersonalLoan(double interestRate){
         this.interestRate = interestRate;
